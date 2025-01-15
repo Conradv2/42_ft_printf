@@ -6,58 +6,73 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/14 23:31:13 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/01/15 16:32:48 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "stdarg.h"
+#include "ft_printf.h"
 #include "stdio.h"
 
-float	average(int n, ...)
+//ap = argument pointer
+//va_list is a type of a variable that stores the pointer to the start of the variable list
+//va_start sets the pointer to the begining of the list
+//va_end it cleans list pointer so that when we use it next time we wont have unpredicted behavior
+int	ft_printf(const char *string, ...)
 {
-	va_list ap;
-	int		total;
+	va_list	ap;
+	char	*str;
+	int		count;
 	int		i;
 
-	va_start(ap, n);
-	total = 0;
+	va_start(ap, string);
 	i = 0;
-
-	while(i < n)
+	count = 0;
+	while (string[i] != '\0')
 	{
-		total += va_arg (ap, int);
-		i++;
+		while (string[i] != '\0' && string[i] != '%')
+		{
+			ft_putchar_fd(string[i], 1);
+			count++;
+			i++;
+		}
+		while (string[i] != '\0' && string[i] == '%')
+		{
+			if (string[i + 1] == 'c')
+			{
+				ft_putchar_fd(va_arg(ap, int), 1);
+				count++;
+				i += 2;
+			}
+			else if (string[i + 1] == 's')
+			{
+				str = va_arg(ap, char *);
+				ft_putstr_fd(str, 1);
+				count += ft_strlen(str);
+				i += 2;
+			}
+			else if (string[i + 1] == '%')
+			{
+				ft_putchar_fd('%', 1);
+				count++;
+				i += 2;
+			}
+		}
 	}
 	va_end(ap);
-	return ((float)total / n);
+	return (count);
 }
 
 int	main(void)
 {
-	char array[] = "czesss";
-	float average_age;
-	int a;
-	int *ptr;
+	char	c;
+	char	s[] = "siemano";
+	int		a;
+	int		b;
 
-	a = 3;
-	ptr = &a;
-						//This 5 is a flag
-	average_age = average(3, 10, 15, 20);
-	printf("The average age of those 3 people is %f\n", average_age);
-	
-	int test = printf("cze\n");
-	printf("%d\n", test);
-	printf("%s\n", array);
-	printf("Memory addres of a = %p\n", (void *)&a);
-	printf("value of the pointer ptr = %p\n", (void *)ptr);
-
-	int number = 42;
-    int *ptr2 = &number;
-
-    // Printing memory address using %p
-    printf("Memory address of 'number': %p\n", (void*)&number);
-    // Printing pointer value using %p
-    printf("Value of the pointer 'ptr': %p\n", (void*)ptr2);
+	c = 'e';
+	a = ft_printf("passed%% character is: %c %s teścik", c, s);
+	printf("\n");
+	b = printf("passed%% character is: %c %s teścik", c, s);
+	printf("\n%d\n%d\n", a, b);
 	return (0);
 }
