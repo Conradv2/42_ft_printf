@@ -1,41 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_percent_case.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/18 19:12:05 by kkruszyn         ###   ########.fr       */
+/*   Created: 2025/01/18 17:26:00 by kkruszyn          #+#    #+#             */
+/*   Updated: 2025/01/18 17:57:13 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "stdio.h"
+#include "libft.h"
 
-int	ft_printf(const char *string, ...)
+int	ft_percent_case(int count, int *i)
 {
-	va_list	ap;
-	int		count;
-
-	count = 0;
-	va_start(ap, string);
-	count = ft_string_iterate(string, ap, count);
-	va_end(ap);
+	ft_putchar_fd('%', 1);
+	count++;
+	(*i) += 2;
 	return (count);
-}
-
-int	main(void)
-{
-	char	c;
-	char	s[] = "siemano";
-	int		a;
-	int		b;
-
-	c = 'e';
-	a = ft_printf("%%cze %% is: %c %s teścik", c, s);
-	printf("\n");
-	b = printf("%%cze %% is: %c %s teścik", c, s);
-	printf("\n%d\n%d\n", a, b);
-	return (0);
 }
