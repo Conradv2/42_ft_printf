@@ -6,7 +6,7 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/18 19:12:05 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/01/18 19:23:50 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,20 @@ int	main(void)
 {
 	char	c;
 	char	s[] = "siemano";
+	char	*j = "AAAAAAAAA";
 	int		a;
 	int		b;
+	int		d = 12;
+	int		i = 012;
+	int		hex = 0x12;
 
 	c = 'e';
-	a = ft_printf("%%cze %% is: %c %s teścik", c, s);
+	a = ft_printf("%%cze %% is: %c %s teś%scik", c, s, j);
 	printf("\n");
-	b = printf("%%cze %% is: %c %s teścik", c, s);
+	b = printf("%%cze %% is: %c %s teś%scik", c, s, j);
 	printf("\n%d\n%d\n", a, b);
+	printf("%d\n", d);
+	printf("%i\n", i);
+	printf("%i\n", hex);
 	return (0);
 }
