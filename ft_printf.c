@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/18 19:23:50 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/01/26 13:50:25 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_printf(const char *string, ...)
 
 	count = 0;
 	va_start(ap, string);
-	count = ft_string_iterate(string, ap, count);
+	count = ft_string_iterate(string, ap);
 	va_end(ap);
 	return (count);
 }
@@ -32,17 +32,17 @@ int	main(void)
 	char	*j = "AAAAAAAAA";
 	int		a;
 	int		b;
-	int		d = 12;
+	int		d = 0xf;
 	int		i = 012;
 	int		hex = 0x12;
 
 	c = 'e';
-	a = ft_printf("%%cze %% is: %c %s teś%scik", c, s, j);
+	a = ft_printf("%i %%cze %% is: %c %s teś%scik", d, c, s, j);
 	printf("\n");
-	b = printf("%%cze %% is: %c %s teś%scik", c, s, j);
-	printf("\n%d\n%d\n", a, b);
-	printf("%d\n", d);
-	printf("%i\n", i);
-	printf("%i\n", hex);
+	b = printf("%i %%cze %% is: %c %s teś%scik", d, c, s, j);
+	printf("\nft_printf = %d\nprintf = %d\n", a, b);
+	printf("%%d = %d\n", d);
+	printf("%%i = %i\n", i);
+	printf("%%i(hex) = %i\n", hex);
 	return (0);
 }
