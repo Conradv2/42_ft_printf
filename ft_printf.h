@@ -6,7 +6,7 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:30:35 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/26 13:55:00 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/01/26 14:44:50 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ int		ft_normal_case(const char *string, int *i);
 int		ft_c_case(int *i, va_list ap);
 int		ft_d_i_case(int *i, va_list ap);
 int     ft_digit_counter(int digit);
-int     ft_u_case(int *i, va_list ap);
-
+int		ft_u_case(int *i, va_list ap);
 #endif
