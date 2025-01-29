@@ -6,7 +6,7 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 12:27:52 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/26 14:41:15 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/01/29 01:35:12 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@ int	ft_d_i_case(int *i, va_list ap)
 	ap_value = va_arg(ap, int);
 	count = ft_digit_counter(ap_value);
 	ft_putnbr_fd(ap_value, 1);
-	if (count < 10)
-		(*i) += 2;
-	else
-		(*i) += 3;
+	(*i) += 2;
 	return (count);
 }
