@@ -6,7 +6,7 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 18:39:58 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/01/26 13:56:33 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/01/26 21:10:27 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_specifier_check(const char *string, int *i, va_list ap)
 		return (ft_percent_case(i));
 	else if (string[*i + 1] == 'd' || string[*i + 1] == 'i')
 		return (ft_d_i_case(i, ap));
-//	else if (string[*i + 1] == 'u')
-//		return (ft_u_case(i, ap));
+	else if (string[*i + 1] == 'u')
+		return (ft_u_case(i, ap));
 	return (0);
 }
