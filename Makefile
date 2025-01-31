@@ -18,6 +18,9 @@ SRCS = ft_c_case.c \
        ft_string_iterate.c \
        ft_strlen.c \
        ft_u_case.c \
+       ft_x_case.c \
+       ft_u_digit_counter.c \
+       ft_u_putnbr_fd.c
 
 # Object files (generated from the source files)
 OBJS = $(SRCS:.c=.o)
