@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/29 03:22:10 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/01 16:13:52 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main(void)
 	int		d = 10;
 	int		i = 012;
 	int		hex = 0x12;
-	int		my_int = -2147483647;
+	// int		my_int = -2147483647;
 	//char *s2 = "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.";
 	
 	//				-2147483648
@@ -49,9 +49,10 @@ int	main(void)
 	//			za duzo tak samo nalicza w przypadku %u i max unsigned int value
 	// 			bardzo mozliwe ze musze napisac nowego ft_putnbr_fd, ktory by dzialal tylko na unsigned int lub size_t
 	//c = 'e';
-	a = ft_printf("siemano \n %s ajaj", my_int);
+	a = ft_printf("%x", -42);
 	printf("\n");
-	b = printf("siemano \n %d ajaj", my_int);
+	b = printf("%x", -42);
+	//			"siemano %d ajaj", my_int
 	//b = printf("%d %i %% cze %% is: %c %s teś %s cik", my_int, d, c, s, j);
 	printf("\nft_printf = %d\nprintf = %d\n", a, b);
 	printf("%%d = %d\n", d);
