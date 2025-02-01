@@ -6,13 +6,12 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/01 16:12:28 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/01 16:30:58 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
-#include "ft_x_case_utils.h"
 
 int	ft_x_case(int *i, va_list ap)
 {
@@ -25,7 +24,7 @@ int	ft_x_case(int *i, va_list ap)
 	ap_value = va_arg(ap, int);
 	tmp = ap_value;
 	count = 0;
-	j = 0;
+	j = 0;	
 	if (ap_value == 0)
 	{
 		ft_putnbr_fd(0, 1);
