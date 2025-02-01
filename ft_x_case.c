@@ -3,41 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_x_case.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/31 02:48:28 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/01 16:12:28 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
-
-void swap_array(char *_x_array)
-{
-	int		i;
-	int		arr_len;
-	char	tmp;
-
-	tmp = 0;
-	arr_len = ft_strlen(_x_array);
-	i = 0;
-	while (i < arr_len / 2)
-	{
-		tmp = _x_array[i];
-		_x_array[i] = _x_array[arr_len - i - 1];
-		_x_array[arr_len - i - 1] = tmp;
-		i++;
-	}
-}
+#include "ft_x_case_utils.h"
 
 int	ft_x_case(int *i, va_list ap)
 {
-	int		count;
-	int		ap_value;
-	int		tmp;
-	char	*x_array;
-	int		j;
+	int			count;
+	int			ap_value;
+	int			tmp;
+	char		*x_array;
+	int			j;
 
 	ap_value = va_arg(ap, int);
 	tmp = ap_value;
@@ -80,12 +63,8 @@ int	ft_x_case(int *i, va_list ap)
 	}
 	x_array[j] = '\0';
 	j = 0;
-	swap_array(x_array);
-	while (x_array[j] != '\0')
-	{
-		ft_putchar_fd(x_array[j], 1);
-		j++;
-	}
+	ft_swap_array(x_array);
+	ft_print_array(x_array);
 	(*i) += 2;
 	free(x_array);
 	return (count);
