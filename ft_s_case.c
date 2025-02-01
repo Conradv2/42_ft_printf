@@ -6,13 +6,12 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 17:27:03 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/01 12:43:31 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/01 16:24:40 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
-
 
 int	ft_s_case(int *i, va_list ap)
 {
