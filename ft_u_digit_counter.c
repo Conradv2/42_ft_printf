@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_u_digit_counter.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:29:18 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/30 01:29:47 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/06 13:45:26 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-size_t	ft_u_digit_counter(unsigned int digit)
+unsigned int	ft_u_digit_counter(unsigned int digit)
 {
-	int	count;
+	unsigned int	count;
 
 	count = 0;
 	if (digit == 0)
