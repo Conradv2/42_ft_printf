@@ -6,7 +6,7 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/06 13:37:18 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:16:47 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,7 @@ int	ft_x_case(int *i, va_list ap)
 		(*i) += 2;
 		return (1);
 	}
-	while (tmp != 0)
-	{
-		tmp /= 16;
-		count++;
-	}
+	count = ft_hex_digit_counter(ap_value);
 	x_array = (char *)malloc((count + 1) * sizeof(char));
 	if (x_array == NULL)
 		return (0);
@@ -62,7 +58,7 @@ int	ft_x_case(int *i, va_list ap)
 	}
 	x_array[j] = '\0';
 	j = 0;
-	ft_swap_array(x_array);
+	ft_reverse_array(x_array);
 	ft_print_array(x_array);
 	(*i) += 2;
 	free(x_array);
@@ -152,6 +148,7 @@ while (ap_value != 0)
 		j++;
 	}
 */
+
 /*
 	int k = 0;
 	char c = 'a';
@@ -164,7 +161,6 @@ while (ap_value != 0)
 		ap_value /= 16;
 	}
 */
-
 
 /*
 	int			count;

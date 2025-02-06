@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap_array.c                                    :+:      :+:    :+:   */
+/*   ft_reverse_array.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/01 16:28:29 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/01 16:28:39 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:17:05 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-void	ft_swap_array(char *_x_array)
+void	ft_reverse_array(char *_x_array)
 {
 	int		i;
 	int		arr_len;
