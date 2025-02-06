@@ -3,6 +3,7 @@ cc \
     ft_d_i_case.c \
     ft_digit_counter.c \
     ft_escape_sequences.c \
+    ft_fill_array.c \
     ft_hex_digit_counter.c \
     ft_normal_case.c \
     ft_percent_case.c \
