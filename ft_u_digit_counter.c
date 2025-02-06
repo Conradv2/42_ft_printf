@@ -6,7 +6,7 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:29:18 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/06 13:45:26 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 13:49:40 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 unsigned int	ft_u_digit_counter(unsigned int digit)
 {
-	unsigned int	count;
+	int	count;
 
 	count = 0;
 	if (digit == 0)
