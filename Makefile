@@ -20,6 +20,7 @@ SRCS = ft_printf.c \
        ft_u_case.c \
        ft_escape_sequences.c \
        ft_putchar_fd.c \
+       ft_putnbr_fd.c \
        ft_putstr_fd.c \
        ft_strlen.c \
 
