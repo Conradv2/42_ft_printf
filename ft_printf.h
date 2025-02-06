@@ -6,7 +6,7 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:30:35 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/01 16:32:25 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 11:44:36 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int			ft_x_case(int *i, va_list ap);
 void		ft_swap_array(char *_x_array);
 void		ft_print_array(const char *_x_array);
 int			ft_digit_counter(int digit);
+void		ft_putnbr_fd(int n, int fd);
 size_t		ft_u_digit_counter(unsigned int digit);
 void		ft_u_putnbr_fd(unsigned int n, int fd);
 int			ft_u_case(int *i, va_list ap);

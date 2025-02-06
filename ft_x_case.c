@@ -6,7 +6,7 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/01 16:30:58 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/01 17:16:34 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_x_case(int *i, va_list ap)
 	ap_value = va_arg(ap, int);
 	tmp = ap_value;
 	count = 0;
-	j = 0;	
+	j = 0;
 	if (ap_value == 0)
 	{
 		ft_putnbr_fd(0, 1);
@@ -97,4 +97,17 @@ reverse the string and print it to get the value im looking for
 
 
 
+for ap < 0 i need to reverse bits and add 1
+and then get this number and convert it to hex as always
+
+so for egzample: -42
+				  42 -> 00101010
+				-43 ->	11010101 <- 213
+						add    1
+				 -42 ->	11010110 <- now its 214
+						and now convert 214 to hex
+						https://www.allmath.com/twos-complement.php
+		8 bit ---->		214(10) = D6
+		16 bit ---> 	214(10) = FFD6
+		32 bit --->		214(10) = FFFFFFD6
 */
