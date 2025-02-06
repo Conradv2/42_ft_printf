@@ -6,14 +6,14 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/06 14:38:27 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 17:21:28 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-int	ft_x_case(int *i, va_list ap)
+int	ft_x_case(int *i, va_list ap, const char *format)
 {
 	unsigned int			ap_value;
 	unsigned int			tmp;
@@ -29,7 +29,10 @@ int	ft_x_case(int *i, va_list ap)
 	x_array = (char *)malloc((count + 1) * sizeof(char));
 	if (x_array == NULL)
 		return (0);
-	ft_fill_array(ap_value, x_array);
+	if (*format == 'x')
+		ft_l_fill_array(ap_value, x_array);
+	else
+		ft_up_fill_array(ap_value, x_array);
 	ft_reverse_array(x_array);
 	ft_print_array(x_array);
 	(*i) += 2;
