@@ -6,10 +6,11 @@
 /*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 17:07:18 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/07 11:11:31 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/06 11:47:40 by kkruszyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
