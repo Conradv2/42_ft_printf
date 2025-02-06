@@ -15,11 +15,11 @@ SRCS = ft_c_case.c \
        ft_putchar_fd.c \
        ft_putnbr_fd.c \
        ft_putstr_fd.c \
+       ft_reverse_array.c \
        ft_s_case.c \
        ft_specifier_check.c \
        ft_string_iterate.c \
        ft_strlen.c \
-       ft_swap_array.c \
        ft_u_case.c \
        ft_u_digit_counter.c \
        ft_u_putnbr_fd.c \
@@ -29,13 +29,7 @@ SRCS = ft_c_case.c \
 OBJS = $(SRCS:.c=.o)
 
 # Name of the library (static library)
-NAME = libftprintf.a
-
-# Default target: build the static library
-all: $(NAME)
-
-# Rule for building the static library
-# ar <- utility to create or modify an archive (static library for example)
+NAME = libftprintf.a for example)
 # r <- replace contents of the archive, if object file exists it is replaced, if it doesnt exist it is created
 # c <- creates archive if it doesnt exist, if it does its not overwrote, ar will create or update the archive with new files
 # s <- creates index for the archive, faster lookup of symbols inside the archive 
