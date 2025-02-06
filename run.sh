@@ -11,11 +11,11 @@ cc \
     ft_putchar_fd.c \
     ft_putnbr_fd.c \
     ft_putstr_fd.c \
+    ft_reverse_array.c \
     ft_s_case.c \
     ft_specifier_check.c \
     ft_string_iterate.c \
     ft_strlen.c \
-    ft_swap_array.c \
     ft_u_case.c \
     ft_u_digit_counter.c \
     ft_u_putnbr_fd.c \
