@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_l_fill_array.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 14:37:06 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/06 17:18:28 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:37:12 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "libft.h"
 
-void	ft_l_fill_array(unsigned int ap_value, char *x_array)
+void	ft_l_fill_array(size_t ap_value, char *x_array)
 {
 	int	i;
 
