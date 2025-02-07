@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_digit_counter.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 13:47:09 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/01 15:00:36 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:53:55 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-#include "libft.h"
+#include "ft_printf.h"
 
 int	ft_digit_counter(int digit)
 {
