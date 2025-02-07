@@ -6,12 +6,11 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 02:19:41 by conradv2          #+#    #+#             */
-/*   Updated: 2025/01/29 02:20:18 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:55:58 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 int	ft_escape_sequences(const char *string, int *i)
 {
