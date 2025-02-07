@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_x_case.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/06 17:21:28 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/07 18:39:36 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@
 int	ft_x_case(int *i, va_list ap, const char *format)
 {
 	unsigned int			ap_value;
-	unsigned int			tmp;
 	int						count;
 	char					*x_array;
 
 	ap_value = va_arg(ap, unsigned int);
-	tmp = ap_value;
 	count = 0;
 	if (ap_value == 0)
 		ft_putnbr_fd(0, 1);
