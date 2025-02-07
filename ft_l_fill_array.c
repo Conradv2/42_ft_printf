@@ -6,12 +6,11 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 14:37:06 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/08 00:37:12 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:57:47 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 void	ft_l_fill_array(size_t ap_value, char *x_array)
 {
