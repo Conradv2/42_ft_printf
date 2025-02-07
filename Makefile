@@ -8,6 +8,7 @@ SRCS = ft_c_case.c \
        ft_digit_counter.c \
        ft_escape_sequences.c \
        ft_hex_digit_counter.c \
+       ft_hex_x_case.c \
        ft_l_fill_array.c \
        ft_normal_case.c \
        ft_p_case.c \
