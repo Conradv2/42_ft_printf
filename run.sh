@@ -6,6 +6,7 @@ cc \
     ft_hex_digit_counter.c \
     ft_l_fill_array.c \
     ft_normal_case.c \
+    ft_p_case.c \
     ft_percent_case.c \
     ft_print_array.c \
     ft_printf.c \

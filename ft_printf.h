@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:30:35 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/06 17:22:14 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/07 18:53:59 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int					ft_escape_sequences(const char *string, int *i);
 unsigned int		ft_hex_digit_counter(unsigned int digit);
 void				ft_l_fill_array(unsigned int ap_value, char *x_array);
 int					ft_normal_case(const char *string, int *i);
+int					ft_p_case(int *i, va_list *ap);
 int					ft_percent_case(int *i);
 void				ft_print_array(const char *_x_array);
 int					ft_printf(const char *string, ...);
