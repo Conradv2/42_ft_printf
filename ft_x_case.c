@@ -6,7 +6,7 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/07 18:39:36 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/07 22:18:18 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,9 @@ int	ft_x_case(int *i, va_list ap, const char *format)
 	count = 0;
 	if (ap_value == 0)
 		ft_putnbr_fd(0, 1);
+		//count += 1 --> need to check later on that
+		//maybe (*i) += 2;
+		//could just return 0 at this poin lol
 	count = ft_hex_digit_counter(ap_value);
 	x_array = (char *)malloc((count + 1) * sizeof(char));
 	if (x_array == NULL)
