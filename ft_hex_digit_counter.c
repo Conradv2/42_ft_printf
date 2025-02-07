@@ -6,12 +6,11 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 13:52:48 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/07 23:52:12 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:57:03 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 int	ft_hex_digit_counter(size_t digit)
 {
