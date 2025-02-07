@@ -6,7 +6,7 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/07 22:18:18 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 00:09:58 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_x_case(int *i, va_list ap, const char *format)
 	else
 		ft_up_fill_array(ap_value, x_array);
 	ft_reverse_array(x_array);
-	ft_print_array(x_array);
+	ft_print_array(x_array); // remove this and just use ft_putstr_fd instead xddd
 	(*i) += 2;
 	free(x_array);
 	return (count);
