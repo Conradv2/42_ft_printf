@@ -6,12 +6,11 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:29:18 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/07 23:52:47 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 01:02:20 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 int	ft_u_digit_counter(unsigned int digit)
 {
