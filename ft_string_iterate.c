@@ -6,12 +6,11 @@
 /*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 17:28:25 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/01/29 02:22:26 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/08 01:00:28 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 int	ft_string_iterate(const char *string, va_list ap)
 {
