@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_up_fill_array.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 17:20:50 by kkruszyn          #+#    #+#             */
-/*   Updated: 2025/02/06 17:22:59 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/08 01:03:00 by conradv2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
 void	ft_up_fill_array(unsigned int ap_value, char *x_array)
 {
