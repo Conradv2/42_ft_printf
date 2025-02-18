@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_x_case.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conrad <conrad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 01:40:25 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/08 00:11:54 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/18 18:07:03 by conrad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ int	ft_x_case(int *i, va_list ap, const char *format)
 	count = 0;
 	if (ap_value == 0)
 		ft_putnbr_fd(0, 1);
-		//count += 1 --> need to check later on that
-		//maybe (*i) += 2;
-		//could just return 0 at this poin lol
 	count = ft_hex_digit_counter(ap_value);
 	x_array = (char *)malloc((count + 1) * sizeof(char));
 	if (x_array == NULL)
@@ -35,13 +32,16 @@ int	ft_x_case(int *i, va_list ap, const char *format)
 	else
 		ft_up_fill_array(ap_value, x_array);
 	ft_reverse_array(x_array);
-	// ft_print_array(x_array); // remove this and just use ft_pustr_fd instead
 	ft_putstr_fd(x_array, 1);
 	(*i) += 2;
 	free(x_array);
 	return (count);
 }
 /*
+		//count += 1 --> need to check later on that
+		//maybe (*i) += 2;
+		//could just return 0 at this poin lol
+	// ft_print_array(x_array); // remove this and just use ft_pustr_fd instead
 	//count = ft_x_digit_counter(ap_value);
 	// 	
 	//									if remainder == 10 -> a
