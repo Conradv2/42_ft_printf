@@ -26,7 +26,7 @@ SRCS = ft_c_case.c \
        ft_u_digit_counter.c \
        ft_u_putnbr_fd.c \
        ft_up_fill_array.c \
-       ft_x_case.c \
+       ft_x_case.c	
 
 # Object files (generated from the source files)
 OBJS = $(SRCS:.c=.o)
@@ -43,23 +43,23 @@ all: $(NAME)
 # c <- creates archive if it doesnt exist, if it does its not overwrote, ar will create or update the archive with new files
 # s <- creates index for the archive, faster lookup of symbols inside the archive 
 $(NAME): $(OBJS)
-		ar rcs $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 # Rule for compiling the source files to object files
 # -c <- only compile the source file into object file without linking to executable
 # $< <- automatic variable, first prerequisite of the rule, it will be replaced with .c that is being compiled
 # -o <- name of output file
 # $@ <- automatic variable, refers to the target of the rule, so $@ becomes .o corresponding to the .c that is being compiled
-%.o: %.c libft.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean the object files
 # f <- force removing files without confirmation
 clean:
-		rm -f $(OBJS)
+	rm -f $(OBJS)
 
 # Clean object files and static library
 fclean: clean
-		rm -f $(NAME)
+	rm -f $(NAME)
 
 # Rebuild everything
 re: fclean all
