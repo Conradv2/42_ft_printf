@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: conradv2 <conradv2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conrad <conrad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 13:30:35 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/08 00:49:50 by conradv2         ###   ########.fr       */
+/*   Updated: 2025/02/18 17:55:28 by conrad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 int					ft_c_case(int *i, va_list ap);
 int					ft_d_i_case(int *i, va_list ap);
 int					ft_digit_counter(int digit);
-int					ft_escape_sequences(const char *string, int *i);
 int					ft_hex_digit_counter(size_t digit);
 int					ft_hex_x_case(size_t ap_value, int count);
 void				ft_l_fill_array(size_t ap_value, char *x_array);

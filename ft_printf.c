@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkruszyn <kkruszyn@student.42.fr>          +#+  +:+       +#+        */
+/*   By: conrad <conrad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:01:54 by conradv2          #+#    #+#             */
-/*   Updated: 2025/02/01 16:13:52 by kkruszyn         ###   ########.fr       */
+/*   Updated: 2025/02/18 17:54:36 by conrad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	main(void)
 	//			za duzo tak samo nalicza w przypadku %u i max unsigned int value
 	// 			bardzo mozliwe ze musze napisac nowego ft_putnbr_fd, ktory by dzialal tylko na unsigned int lub size_t
 	//c = 'e';
-	a = ft_printf("%x", -42);
+	a = ft_printf("si\tem\nano");
 	printf("\n");
 	b = printf("%x", -42);
 	//			"siemano %d ajaj", my_int
